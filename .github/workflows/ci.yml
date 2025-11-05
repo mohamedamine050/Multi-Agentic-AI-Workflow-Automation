@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Run syntax check
+        run: |
+          python -m py_compile $(git ls-files '*.py' | tr '\n' ' ')
+      - name: Build Docker image
+        run: |
+          docker build -t chatbot-langgraph:ci .
+      - name: Run container in background
+        run: |
+          docker run -d --name chatbot-ci -p 8000:8000 chatbot-langgraph:ci
+      - name: Wait for service
+        run: |
+          sleep 2
+          curl -f http://localhost:8000/health
+      - name: Stop container
+        run: |
+          docker stop chatbot-ci || true
+          docker rm chatbot-ci || true

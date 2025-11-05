@@ -1,0 +1,8 @@
+{
+  "graphs": {
+    "main": {
+      "path": "./main.py:graph"
+    }
+  },
+  "dependencies": ["langchain", "langgraph", "langchain-openai"]
+}

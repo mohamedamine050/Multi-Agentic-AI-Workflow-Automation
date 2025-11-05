@@ -1,0 +1,81 @@
+[
+    {
+        "id": 1,
+        "thread_id": "discussion_001",
+        "source": "gmail",
+        "sender": "client1@example.com",
+        "subject": "Problème avec ma commande",
+        "body": "Bonjour, j'ai reçu ma commande hier mais un produit est endommagé."
+    },
+    {
+        "id": 2,
+        "thread_id": "discussion_001",
+        "source": "gmail",
+        "sender": "support@example.com",
+        "subject": "Re: Problème avec ma commande",
+        "body": "Bonjour, nous sommes désolés pour cela. Pouvez-vous nous envoyer une photo du produit ?"
+    },
+    {
+        "id": 3,
+        "thread_id": "discussion_002",
+        "source": "zendesk",
+        "sender": "client2@example.com",
+        "subject": "Question sur l'abonnement",
+        "body": "Je voudrais savoir si je peux passer au plan premium ce mois-ci."
+    },
+    {
+        "id": 4,
+        "thread_id": "discussion_003",
+        "source": "gmail",
+        "sender": "client3@example.com",
+        "subject": "Problème de connexion",
+        "body": "Je n'arrive pas à me connecter à mon compte depuis hier."
+    },
+    {
+        "id": 5,
+        "thread_id": "discussion_002",
+        "source": "zendesk",
+        "sender": "sales@example.com",
+        "subject": "Re: Question sur l'abonnement",
+        "body": "Bonjour, oui c'est possible. Voulez-vous que nous fassions le changement pour vous ?"
+    },
+    {
+        "id": 6,
+        "thread_id": "discussion_004",
+        "source": "gmail",
+        "sender": "client4@example.com",
+        "subject": "Demande de remboursement",
+        "body": "J'ai reçu un produit incorrect et je souhaite un remboursement."
+    },
+    {
+        "id": 7,
+        "thread_id": "discussion_003",
+        "source": "gmail",
+        "sender": "support@example.com",
+        "subject": "Re: Problème de connexion",
+        "body": "Bonjour, pouvez-vous réinitialiser votre mot de passe et essayer à nouveau ?"
+    },
+    {
+        "id": 8,
+        "thread_id": "discussion_005",
+        "source": "zendesk",
+        "sender": "client5@example.com",
+        "subject": "Demande de formation",
+        "body": "Je voudrais savoir si vous proposez des sessions de formation cette semaine."
+    },
+    {
+        "id": 9,
+        "thread_id": "discussion_006",
+        "source": "gmail",
+        "sender": "client6@example.com",
+        "subject": "Problème de facturation",
+        "body": "J'ai été facturé deux fois pour le même produit."
+    },
+    {
+        "id": 10,
+        "thread_id": "discussion_004",
+        "source": "support@example.com",
+        "subject": "Re: Demande de remboursement",
+        "body": "Nous avons bien reçu votre demande. Le remboursement sera traité dans 3 jours ouvrables."
+    }
+]
